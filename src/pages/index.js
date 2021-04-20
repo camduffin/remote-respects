@@ -6,6 +6,7 @@ import SEO from "../components/SEO"
 import Landing from '../components/Landing';
 import About from '../components/About';
 import How from '../components/How';
+import Contact from '../components/Contact';
 
 
 const IndexPage = () => {
@@ -16,6 +17,7 @@ const IndexPage = () => {
           <Landing />
           <About />
           <How />
+          <Contact />
         </Layout>
   )
 }
