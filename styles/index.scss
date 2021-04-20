@@ -73,12 +73,27 @@ footer {
 
         a {
             transition: all .2s ease-in-out;
+            @include paragraph(2rem);
         }
 
         a:hover, a:focus {
             transform: scale(1.2);
         }
 
+    }
+
+    .isi-logo {
+        opacity: .8;
+        border-radius: 5px;
+        width: 50%;
+        box-shadow: 5px 5px 8px $offwhite;
+        transition: all .2s ease-in-out;
+
+        &:hover, 
+        &:focus {
+            opacity: .5;
+            transform: scale(1.1);
+        }
     }
 
     p, a {
@@ -89,6 +104,32 @@ footer {
         margin: 0;
         padding: 0;
         height: 5vh;
+    }
+
+    .social-links {
+        margin: 0;
+        display: flex;
+        
+        li {
+            padding: 20px;
+            transition: all .2s ease-in-out;
+            
+            svg {
+                font-size: 3rem;
+                transition: all .2s ease-in-out;
+    
+                &:hover,
+                &:focus {
+                    color: $darkbrown;
+                }
+            }
+    
+            &:hover,
+            &:focus {
+                transform: scale(1.4);
+            }
+        }
+    
     }
 
 }
@@ -153,10 +194,6 @@ h2 {
     .about-image {
         width: 100%;
         padding-left: 90px;
-    }
-
-    .candle-image {
-        width: 100%;
     }
 
     p {
@@ -265,6 +302,11 @@ h2 {
             color: $offwhite;
             opacity: .8;
         }
+    }
+
+    .submit-message {
+        color: $offwhite;
+        @include paragraph(4rem);
     }
 
     form {

@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../images/isi-logo.png';
+import SocialLinks from '../components/SocialLinks';
 
 const Footer = () => {
     return (
@@ -23,7 +24,7 @@ const Footer = () => {
                 </div>
                 <span aria-hidden="true"></span>
                 <nav>
-                    {/* <SocialLinks /> */}
+                    <SocialLinks />
                 </nav>
             </div>
             <div className="copyright-bottom">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import fields from '../images/fields.jpg';
-import { BiChevronsDown } from 'react-icons/bi';
+import { CgArrowLongDownC } from 'react-icons/cg';
 import '../../styles/index.scss';
 import { StaticImage } from "gatsby-plugin-image";
 import scrollTo from 'gatsby-plugin-smoothscroll';
@@ -12,7 +12,7 @@ const How = () => {
 
     return (
         <>
-            <section className="how-section" id="how" data-sal="fade" data-sal-duration="1000">
+            <section className="how-section" id="how">
                 <Parallax 
                 className="how-background"
                 strength={500}
@@ -24,9 +24,9 @@ const How = () => {
                             <h2>How it Works</h2>
                             <p>As long as there is an internet connection (we can help as needed) RemoteRespects manages your memorial webcast from just about anywhere. Graveside, funeral home, however you've chosen to honour your loved one, our staff are mindful and supportive.</p>
                             <div className="learn-more" onClick={() => scrollTo('#examples')}>
-                                <BiChevronsDown />
+                                <CgArrowLongDownC />
                                     <p>Learn more</p>
-                                <BiChevronsDown />
+                                <CgArrowLongDownC />
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,13 @@ const How = () => {
             <section className="how-section-two" id="examples" data-sal="fade" data-sal-duration="1000">
                 <div className="wrapper how-two-flex">
                     <div className="how-two-image">
-                        <StaticImage className="mobile-video" src={mobileVideo} alt="A phone with a video playing" />
+                        <StaticImage 
+                        className="mobile-video" 
+                        src={mobileVideo} 
+                        alt="A phone with a video playing"
+                        width={600}
+                        height={900}
+                        />
                     </div>
                     <div className="how-two-text">
                         <h2>Examples</h2>
