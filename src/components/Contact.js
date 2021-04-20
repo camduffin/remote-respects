@@ -17,12 +17,12 @@ const Contact = () => {
                     <div className="wrapper">
                         <div className="contact-text">
                             <div className="form-container">
-                                <h3>Send us a message here:</h3>
+                                <h3>Contact us today:</h3>
                                 <ContactForm />
                             </div>
                             <nav>
                                 <ul>
-                                    <li> <a href="tel:+1-613-737-3378"><FaPhone aria-hidden="true"/> 613-737-3378</a></li>
+                                    <li><a href="tel:+1-613-737-3378"><FaPhone aria-hidden="true"/> 613-737-3378</a></li>
                                     <li><a href="mailto:info@ourday.ca"><MdEmail aria-hidden="true"/> info@ourday.ca</a></li>
                                 </ul>
                             </nav>

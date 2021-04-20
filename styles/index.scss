@@ -269,13 +269,37 @@ h2 {
         }
 
         button {
-            width: 60%;
-            padding: 15px;
+            width: 30%;
+            padding: 10px;
             background-color: $opaque;
+            color: $offwhite;
+            @include paragraph(2rem);
+            margin: 0 auto;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                transform: scale(1.2);
+            }
+        }
+
+    }
+
+    nav {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        li {
+            padding: 20px 0;
+        }
+
+        a {
             color: $offwhite;
             @include paragraph(3rem);
         }
-
     }
 
 
@@ -284,10 +308,5 @@ h2 {
         padding-top: 100px;
     }
 
-    a {
-        color: $offwhite;
-        @include paragraph(3rem);
-        
-    }
 }
 
