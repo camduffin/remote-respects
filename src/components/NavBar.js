@@ -52,10 +52,10 @@ const NavBar = () => {
                     <a href="#how">How it Works</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#examples">Examples</a>
                 </li>
                 <li>
-                    <a href="#examples">Examples</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>

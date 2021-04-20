@@ -7,7 +7,7 @@ const About = () => {
     const candles = '../images/candles.jpg';
 
     return (
-        <section className="about-section" id="about">
+        <section className="about-section" id="about" data-sal="fade" data-sal-duration="1000">
             <div className="wrapper about-container">
                 <div className="about-text">
                 <h2>About</h2>

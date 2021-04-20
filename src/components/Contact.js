@@ -7,7 +7,7 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
     return (
-        <section className="contact-section" id="contact">
+        <section className="contact-section" id="contact" data-sal="fade" data-sal-duration="1000">
             <Parallax 
                 className="contact-background"
                 strength={500}

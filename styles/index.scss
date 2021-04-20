@@ -20,6 +20,17 @@
         font-size: 8rem;
     }
 
+    svg {
+        color: $offwhite;
+        opacity: .6;
+        font-size: 4rem;
+        position: absolute;
+        top: 0;
+        left: 45%;
+        height: 110vh;
+        cursor: pointer;
+    }
+
 }
 
 .main-container {
@@ -148,8 +159,9 @@ h2 {
         width: 100%;
     }
 
-    h2, p {
+    p {
         color: white;
+        @include paragraph(2.5rem);
     }
 
 }
@@ -167,7 +179,7 @@ h2 {
         padding-top: 60px;
     }
 
-    h2, p {
+    p {
         color: white;
     }
 
@@ -182,10 +194,15 @@ h2 {
         position: relative;
         top: 15px;
     }
+
+    p {
+        @include paragraph(2.5rem);
+    }
 }
 
 .how-section-two {
     height: 100vh;
+    background-color: $lightgrey;
 
     .how-two-flex {
         height: 100vh;
@@ -209,6 +226,12 @@ h2 {
         img {
             width: 100%;
         }
+    }
+
+    p {
+        @include paragraph(2.5rem);
+        width: 80%;
+        color: $offwhite;
     }
 }
 
@@ -280,7 +303,14 @@ h2 {
 
             &:hover,
             &:focus {
-                transform: scale(1.2);
+                transform: scale(0.9);
+                opacity: 0.5;
+            }
+
+            &:active {
+                position: relative;
+                top: 2px;
+                opacity: .6;
             }
         }
 

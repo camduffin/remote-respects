@@ -4,7 +4,7 @@ import logo from '../images/isi-logo.png';
 const Footer = () => {
     return (
         <footer>
-            <div className="footer-container">
+            <div className="footer-container" data-sal="fade" data-sal-duration="2000">
                 <div className="address">
                     <p>150 C Terence</p>
                     <p>Matthews Cres</p>
