@@ -154,36 +154,38 @@ h2 {
     z-index: 100000;
     display: flex;
     justify-content: flex-end;
-    padding-right: 10%;
+    padding-right: 2%;
     align-items: center;
     transition: top 0.6s;
 
     ul {
         display: grid;
-        grid-template-columns: 1fr 1fr 1.4fr 1fr 1fr;
-        width: 60%;
+        grid-template-columns: 1fr 1fr 1.4fr 1fr 1fr 1fr;
+        width: 70%;
     }
 
     li {
 
         a {
             @include navLink(2.5rem);
-    
         }
     }
-
 }
 
 .about-section {
-    height: 100vh;
+    padding: 250px 0;
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    background-color: $lightgrey;
+    background-color: $darkbrowntwo;
 
     .about-container {
         display: flex;
+        background: $black;
+        border-radius: 5px;
+        padding: 100px 40px;
+        box-shadow: 5px 5px 50px $transwhite;
     }
 
     .about-text {
@@ -194,20 +196,31 @@ h2 {
     .about-image {
         width: 100%;
         padding-left: 90px;
+
+        img {
+            border-radius: 5px;
+        }
+    }
+
+    h2 {
+        color: $transwhite;
     }
 
     p {
-        color: white;
+        color: $offwhite;
         @include paragraph(2.5rem);
     }
 
 }
 
 .how-section {
-    height: 100vh;
 
     .how-background {
         height: 100vh;
+    }
+
+    h2 {
+        color: $header;
     }
 
     .how-text {
@@ -234,19 +247,28 @@ h2 {
 
     p {
         @include paragraph(2.5rem);
+        color: $offwhite;
     }
 }
 
 .how-section-two {
-    height: 100vh;
-    background-color: $lightgrey;
+    padding: 100px 0;
+    
+    background-color: $black;
+
+    h2 {
+        color: $transwhite;
+    }
 
     .how-two-flex {
-        height: 100vh;
+        padding: 100px 40px;
         display: flex;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        background: $opaque;
+        border-radius: 5px;
+        box-shadow: 5px 5px 50px $transwhite;
     }
 
     .how-to-text {
@@ -255,6 +277,7 @@ h2 {
 
     .how-two-image {
         width: 100%;
+        padding-right: 30px;
     }
 
     .mobile-video {
@@ -262,6 +285,7 @@ h2 {
 
         img {
             width: 100%;
+            min-width: 200px;
         }
     }
 
@@ -273,15 +297,11 @@ h2 {
 }
 
 .contact-section {
-    height: 100vh;
-
-    .contact-background {
-        height: 100vh;
-    }
 
     .contact-text {
         display: flex;
-        height: 100vh;
+        padding-top: 200px;
+        padding-bottom: 300px;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -359,7 +379,7 @@ h2 {
     }
 
     nav {
-        width: 30%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -379,6 +399,84 @@ h2 {
         color:  $offwhite;
         padding-top: 100px;
     }
+
+}
+
+.blog-landing-background {
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    h1 {
+        color:  white;
+        font-family: $questrial;
+        font-size: 8rem;
+        text-align: center;
+        position: relative;
+        right: 25px;
+    }
+
+    h2 {
+        font-family: $abel;
+        text-align: center;
+    }
+
+    svg {
+        color: $offwhite;
+        opacity: .6;
+        font-size: 4rem;
+        position: absolute;
+        top: 0;
+        left: 45%;
+        height: 110vh;
+        cursor: pointer;
+    }
+
+}
+
+.blog-section-one {
+    padding: 200px 0;
+    background-color: $lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        @include paragraph(2.5rem);
+        color: $offwhite;
+        line-height: 3rem;
+    }
+
+    .blog-flex {
+        display: flex;
+        width: 90%;
+        align-items: center;
+    }
+
+    .blog-text-container-one {
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .blog-image-container-one {
+        padding-left: 10%;
+
+        .blog-image-one {
+            border-radius: 5px;
+        }
+    }
+
+    h3 {
+        @include header(4rem);
+    }
+
 
 }
 

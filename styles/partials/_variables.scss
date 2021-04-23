@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-
 // colours 
 
 $opaque: rgba(0, 0, 0, .4);
-$offwhite: #dbe0e3;
+$offwhite: #dbe0e3e3;
 $darkbrown: #655656;
 $dark: #212121;
 $yellow: #8B601A;
 $lightgrey: #8e7f7f;
-
-
+$header: #302012;
+$transwhite: #ffffff66;
+$black: #222222;
+$darkbrowntwo: #393232;
 
 // fonts
 
@@ -19,6 +20,7 @@ $satisfy: 'Satisfy', cursive;
 $questrial: 'Questrial', sans-serif;
 $abel: 'Abel', sans-serif;
 
+// mixins
 
 @mixin navLink($sizeValue) {
     font-size: $sizeValue;

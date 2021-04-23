@@ -23,7 +23,7 @@ const Contact = () => {
                             <nav>
                                 <ul>
                                     <li><a href="tel:+1-613-737-3378"><FaPhone aria-hidden="true"/> 613-737-3378</a></li>
-                                    <li><a href="mailto:info@ourday.ca"><MdEmail aria-hidden="true"/> info@ourday.ca</a></li>
+                                    <li><a href="mailto:info@remoterespects.ca"><MdEmail aria-hidden="true"/> info@remoterespects.ca</a></li>
                                 </ul>
                             </nav>
                         </div>

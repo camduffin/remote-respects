@@ -32,7 +32,7 @@ const How = () => {
                     </div>
                 </Parallax>
             </section>
-            <section className="how-section-two" id="examples" data-sal="fade" data-sal-duration="1000">
+            <section className="how-section-two" id="examples">
                 <div className="wrapper how-two-flex">
                     <div className="how-two-image">
                         <StaticImage 

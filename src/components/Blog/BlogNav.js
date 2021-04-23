@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import '../../styles/index.scss';
+import '../../../styles/index.scss';
 import { Link } from 'gatsby';
 
 
-const NavBar = () => {
+const BlogNav = () => {
 
     function debounce(func, wait, immediate) {
         var timeout;
@@ -44,19 +44,29 @@ const NavBar = () => {
         <nav className="nav-bar" id="navbar" style={{top: visible ? '0' : '-15vh'}}>
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <Link to="/">
+                        Home
+                    </Link>
                 </li>
                 <li>
-                    <a href="#about">About</a>
+                    <Link to="/#about">
+                        About
+                    </Link>
                 </li>
                 <li>
-                    <a href="#how">How it Works</a>
+                    <Link to="/#how">
+                        How it Works
+                    </Link>
                 </li>
                 <li>
-                    <a href="#examples">Examples</a>
+                    <Link to="/#examples">
+                        Examples
+                    </Link>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <Link to="/#contact">
+                        Contact
+                    </Link>
                 </li>
                 <li>
                     <Link to="/blog/">
@@ -68,4 +78,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar;
+export default BlogNav;
