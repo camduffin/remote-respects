@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/index.scss';
 import { Link } from 'gatsby';
 import { RiCloseFill } from 'react-icons/ri';
+import logo from '../images/isi-logo.png';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 const NavBar = () => {
@@ -50,6 +52,9 @@ const NavBar = () => {
 
     return (
         <nav className="nav-bar" id="navbar" style={{top: visible ? '0' : '-15vh'}}>
+            <a onClick={() => scrollTo('#main')} className="logo">
+                <img src={logo} alt="iSiLIVE logo"/>
+            </a>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                 <li className="exit"><RiCloseFill onClick={() => handleClick()} /></li>
                 <li>
@@ -68,7 +73,7 @@ const NavBar = () => {
                     <a href="#contact">Contact</a>
                 </li>
                 <li>
-                    <Link to="/blog/">
+                    <Link to="/blog">
                         Blog
                     </Link>
                 </li>

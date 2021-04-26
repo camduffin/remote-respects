@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../../../styles/index.scss';
 import { Link } from 'gatsby';
 import { RiCloseFill } from 'react-icons/ri';
+import logo from '../../images/isi-logo.png';
 
 
 const BlogNav = () => {
@@ -49,6 +50,9 @@ const BlogNav = () => {
 
     return (
         <nav className="nav-bar" id="navbar" style={{top: visible ? '0' : '-15vh'}}>
+            <Link className="logo" to="/">
+                <img src={logo} alt="iSiLIVE logo"/>
+            </Link>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                 <li className="exit"><RiCloseFill onClick={() => handleClick()} /></li>
                 <li>

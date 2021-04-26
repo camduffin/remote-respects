@@ -12,7 +12,7 @@ const Landing = () => {
         strength={500}
         blur={{ min: -15, max: 15 }} 
         bgImage={darkLandscape}>
-            <div className="landing-container">
+            <div className="landing-container" id="main">
                 <h1 data-sal="slide-right" data-sal-duration="2000">Remote Respects</h1>
                 <CgArrowLongDownC onClick={() => scrollTo('#about')} />
             </div>
