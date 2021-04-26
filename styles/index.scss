@@ -5,14 +5,18 @@
 .landing-background {
     height: 100vh;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 1;
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    .landing-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     h1 {
         color:  white;
@@ -22,11 +26,11 @@
 
     svg {
         color: $offwhite;
-        opacity: .6;
-        font-size: 4rem;
+        opacity: .8;
+        font-size: 5rem;
         position: absolute;
-        top: 0;
-        left: 45%;
+        top: 40%;
+        left: 50%;
         height: 110vh;
         cursor: pointer;
     }
@@ -38,6 +42,8 @@
     flex-direction: column;
     min-height: 100vh;
     min-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -264,36 +270,10 @@ h2 {
         width: 50%;
         transform: translateX(-500px);
     }
-
-    // .nav-links {
-    //     transition: 0.5s ease-in;
-    //     padding-left: 20px;
-    //     z-index: 20000;
-
-    //     .exit {
-    //         color: $offwhite;
-    //         font-size: 4rem;
-    //         display: none;
-
-           
-    //     }
-    // }
-    
-    
-    
-
-    // nav .nav-links li:first-of-type {
-    //     opacity: 1;
-    // }
     
     nav .nav-links li {
         padding: 50px 25px 25px 15px;
         width: 50%;
-
-        // svg {
-        //     display: block;
-        //     bottom: 0;
-        // }
     }
 
 }
@@ -531,14 +511,18 @@ h2 {
 .blog-landing-background {
     height: 100vh;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 1;
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    .blog-landing-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     h1 {
         color:  white;
@@ -556,11 +540,11 @@ h2 {
 
     svg {
         color: $offwhite;
-        opacity: .6;
-        font-size: 4rem;
+        opacity: .8;
+        font-size: 5rem;
         position: absolute;
-        top: 0;
-        left: 45%;
+        top: 40%;
+        left: 50%;
         height: 110vh;
         cursor: pointer;
     }
