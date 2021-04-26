@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../../styles/index.scss';
 import { Link } from 'gatsby';
+import { RiCloseFill } from 'react-icons/ri';
 
 
 const BlogNav = () => {
@@ -20,8 +21,10 @@ const BlogNav = () => {
         };
     };
 
+    // States
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const handleScroll = debounce(() => {      
 
@@ -31,6 +34,10 @@ const BlogNav = () => {
     
         setPrevScrollPos(currentScrollPos);
     }, 100);
+
+    const handleClick = () => {
+        setOpen(!open);
+    }
 
     useEffect(() => {   
         window.addEventListener('scroll', handleScroll);
@@ -42,7 +49,8 @@ const BlogNav = () => {
 
     return (
         <nav className="nav-bar" id="navbar" style={{top: visible ? '0' : '-15vh'}}>
-            <ul>
+            <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
+                <li className="exit"><RiCloseFill onClick={() => handleClick()} /></li>
                 <li>
                     <Link to="/">
                         Home
@@ -74,6 +82,9 @@ const BlogNav = () => {
                     </Link>
                 </li>
             </ul>
+            <div className="burger" onClick={() => handleClick()}>
+                <div className="menu" aria-label="hidden"></div>
+            </div>
         </nav>
     )
 }

@@ -37,3 +37,13 @@ $abel: 'Abel', sans-serif;
     font-size: $sizeValue;
     font-family: $questrial;
 }
+
+
+// Media Queries
+
+
+@mixin tabletMQ {
+    @media (max-width: 768px) {
+    @content;
+    }
+}

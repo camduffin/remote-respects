@@ -157,11 +157,14 @@ h2 {
     padding-right: 2%;
     align-items: center;
     transition: top 0.6s;
+    margin: 0;
 
     ul {
         display: grid;
-        grid-template-columns: 1fr 1fr 1.4fr 1fr 1fr 1fr;
-        width: 70%;
+        grid-template-columns: 1fr 1fr 1.3fr 1fr 1fr 1fr 1fr;
+        width: 80%;
+        position: relative;
+        left: 210px;
     }
 
     li {
@@ -170,6 +173,129 @@ h2 {
             @include navLink(2.5rem);
         }
     }
+
+    .burger {
+        position: fixed;
+        left: 70%;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        padding-right: 50px;
+        transition: all .3s ease-in-out;
+        padding: 100px;
+        display: none;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        .menu {
+            width: 50px;
+            height: 6px;
+            border-radius: 5px;
+            transition: all .5 ease-in-out;
+            background: $offwhite;
+            box-shadow: 5px 5px 5px black;
+        }
+
+        .menu:before, .menu:after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: $offwhite;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px black;
+            transition: all .5s ease-in-out;
+        }
+
+        .menu:before {
+            transform: translateY(-16px);
+        }
+
+        .menu:after {
+            transform: translateY(16px);
+        }
+        
+    }
+
+    .nav-links {
+        transition: 0.5s ease-in;
+        padding-left: 20px;
+        z-index: 20000;
+
+        .exit {
+            color: $offwhite;
+            font-size: 4rem;
+            display: none;
+
+            @include tabletMQ {
+                display: block;
+            }
+
+            svg:hover,
+            svg:focus {
+                transform: scale(1.15);
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 768px) {
+
+    .nav-bar {
+
+        .burger {
+            display: block;
+        }
+
+    }
+
+    nav .nav-links {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        margin: 0;
+        background-color: $opaque;
+        width: 50%;
+        transform: translateX(-500px);
+    }
+
+    // .nav-links {
+    //     transition: 0.5s ease-in;
+    //     padding-left: 20px;
+    //     z-index: 20000;
+
+    //     .exit {
+    //         color: $offwhite;
+    //         font-size: 4rem;
+    //         display: none;
+
+           
+    //     }
+    // }
+    
+    
+    
+
+    // nav .nav-links li:first-of-type {
+    //     opacity: 1;
+    // }
+    
+    nav .nav-links li {
+        padding: 50px 25px 25px 15px;
+        width: 50%;
+
+        // svg {
+        //     display: block;
+        //     bottom: 0;
+        // }
+    }
+
 }
 
 .about-section {
@@ -178,14 +304,14 @@ h2 {
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    background-color: $darkbrowntwo;
+    background-color: $darkbrown;
 
     .about-container {
         display: flex;
         background: $black;
         border-radius: 5px;
         padding: 100px 40px;
-        box-shadow: 5px 5px 50px $transwhite;
+        // box-shadow: 5px 5px 50px $transwhite;
     }
 
     .about-text {
@@ -266,9 +392,9 @@ h2 {
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        background: $opaque;
+        background: $darkbrown;
         border-radius: 5px;
-        box-shadow: 5px 5px 50px $transwhite;
+        // box-shadow: 5px 5px 50px $transwhite;
     }
 
     .how-to-text {

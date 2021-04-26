@@ -13,7 +13,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <SEO title="Remote Respects" />
+        <SEO title="Home" />
           <Landing />
           <About />
           <How />
