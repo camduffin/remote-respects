@@ -5,10 +5,10 @@ import { CgArrowLongDownC } from 'react-icons/cg';
 import '../../styles/index.scss';
 import { StaticImage } from "gatsby-plugin-image";
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import mobileVideo from '../images/mobile-video.jpg';
 
 const How = () => {
 
-    const mobileVideo = '../images/mobile-video.jpg';
 
     return (
         <>
@@ -35,13 +35,14 @@ const How = () => {
             <section className="how-section-two" id="examples">
                 <div className="wrapper how-two-flex">
                     <div className="how-two-image">
-                        <StaticImage 
+                        {/* <StaticImage 
                         className="mobile-video" 
                         src={mobileVideo} 
                         alt="A phone with a video playing"
                         width={600}
                         height={900}
-                        />
+                        /> */}
+                        <img src={mobileVideo} alt="A person scrolling through a mobile phone resting on a wooden table"/>
                     </div>
                     <div className="how-two-text">
                         <h2>Examples</h2>

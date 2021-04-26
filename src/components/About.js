@@ -1,10 +1,10 @@
 import React from 'react';
 import { StaticImage } from "gatsby-plugin-image";
 import '../../styles/index.scss';
+import candles from '../images/candles.jpg';
 
 const About = () => {
 
-    const candles = '../images/candles.jpg';
 
     return (
         <section className="about-section" id="about">
@@ -15,16 +15,15 @@ const About = () => {
                 <p>We can help you bring and share your memories and memorial with the people that matter.</p>
                 </div>
                 <div className="about-image">
-                <StaticImage 
+                {/* <StaticImage 
                 className="candle-image" 
                 src={candles} alt="candles"
                 placeholder="blurred" 
-                
-                
                 loading="lazy"
                 width={700}
                 height={400}
-                />
+                /> */}
+                <img src={candles} alt="A dimly lit white candle"/>
                 </div>
             </div>
         </section>
