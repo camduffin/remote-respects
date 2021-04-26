@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Remote Respects`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Remote Respects provides optimal quality funeral livestreaming. We can help you bring and share your memories and memorial with the people that matter.`,
+    siteUrl: `https://production.d19hoapejxw6z2.amplifyapp.com/`,
+    keywords: `funeral, graveside, service, memorial, funeral webcast, funeral livestream, memorial webcast, memorial livestream, graveside service, distance funeral,  funeral broadcast, memorial broadcast, graveside broadcast, ashes, commemoration`,
+    image: `/isi-logo.png`,
+    twitterUsername: `@iSiLIVE_Canada`,
   },
   plugins: [
     `gatsby-plugin-sass`,

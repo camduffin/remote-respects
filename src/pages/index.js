@@ -5,12 +5,15 @@ import Landing from '../components/Landing';
 import About from '../components/About';
 import How from '../components/How';
 import Contact from '../components/Contact';
+import Search from '../components/SearchEngine';
+
 
 
 const IndexPage = () => {
 
   return (
       <Layout>
+        <Search />
           <Landing />
           <About />
           <How />

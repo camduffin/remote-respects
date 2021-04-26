@@ -288,7 +288,7 @@ h2 {
 
     .about-container {
         display: flex;
-        background: $black;
+        background: $opaque;
         border-radius: 5px;
         padding: 100px 40px;
         // box-shadow: 5px 5px 50px $transwhite;
@@ -302,16 +302,20 @@ h2 {
     .about-image {
         width: 100%;
         padding-left: 90px;
+        padding-top: 50px;
 
         img {
             border-radius: 5px;
-            width: 80%;
+            width: 100%;
+
             min-width: 300px;
         }
     }
 
     h2 {
         color: $transwhite;
+        border-bottom: 2px solid $transwhite;
+        width: 97%;
     }
 
     p {
@@ -328,29 +332,49 @@ h2 {
     }
 
     h2 {
-        color: $header;
+        color: $transwhite;
+        border-bottom: 2px solid $transwhite;
+        width: 97%;
+        
     }
 
     .how-text {
         width: 80%;
         padding-left: 15%;
         padding-top: 60px;
+        background: $opaque;
+        margin-top: 50px;
+        border-radius: 3px;
+        padding-right: 100px;
+        padding-bottom: 100px;
     }
 
     p {
         color: white;
+        border-right: 2px solid $transwhite;
     }
 
     .learn-more {
         display: flex;
         cursor: pointer;
-    }
 
-    svg {
-        font-size: 4rem;
-        color: white;
-        position: relative;
-        top: 15px;
+        button {
+            background: none;
+            border: none;
+            font-size: 2.5rem;
+            color: $offwhite;
+            cursor: pointer;
+            border-bottom: 2px solid $transwhite;
+            border-right: 2px solid $transwhite;
+            transition: all 0.2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: $violet;
+                border-bottom: 2px solid $violet;
+            border-right: 2px solid $violet;
+            }
+        }
     }
 
     p {
@@ -366,6 +390,8 @@ h2 {
 
     h2 {
         color: $transwhite;
+        border-bottom: 2px solid $transwhite;
+        width: 78%;
     }
 
     .how-two-flex {
@@ -454,7 +480,9 @@ h2 {
             background: $opaque;
             padding: 10px;
             margin: 20px 0;
-            border: 3px solid $offwhite;
+            border: none;
+            border-bottom: 2px solid $offwhite;
+            border-left: 2px solid $offwhite;
             border-radius: 3px;
             width: 100%;
             @include paragraph(2rem);
@@ -543,6 +571,7 @@ h2 {
     h2 {
         font-family: $abel;
         text-align: center;
+        color: $offwhite;
     }
 
     svg {
@@ -561,9 +590,6 @@ h2 {
 .blog-section-one {
     padding: 200px 0;
     background-color: $lightgrey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     p {
         @include paragraph(2.5rem);
@@ -571,21 +597,22 @@ h2 {
         line-height: 3rem;
     }
 
-    .blog-flex {
+    .blog-flex-one {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: space-between;
     }
 
-
     .blog-text-container-one {
         width: 90%;
-        padding-right: 90px;
+        padding: 90px;
+        margin-right: 100px;
+        border-radius: 3px;
+        background: $opaque;
     }
 
     .blog-image-container-one {
-        // padding-left: 20%;
         width: 100%;
 
         img {
@@ -597,6 +624,30 @@ h2 {
 
     h3 {
         @include header(4rem);
+    }
+
+    .blog-flex-two {
+        display: flex;
+    }
+
+    .blog-text-container-two {
+        width: 80%;
+        padding: 90px;
+        margin-left: 100px;
+        border-radius: 3px;
+        background: $opaque;
+        margin-top: 100px;
+    }
+
+    .blog-image-container-two {
+        width: 100%;
+
+        img {
+            padding-top: 200px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
     }
 
 }

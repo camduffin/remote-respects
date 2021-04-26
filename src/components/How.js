@@ -3,7 +3,6 @@ import { Parallax } from 'react-parallax';
 import fields from '../images/fields.jpg';
 import { CgArrowLongDownC } from 'react-icons/cg';
 import '../../styles/index.scss';
-import { StaticImage } from "gatsby-plugin-image";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import mobileVideo from '../images/mobile-video.jpg';
 
@@ -24,9 +23,9 @@ const How = () => {
                             <h2>How it Works</h2>
                             <p>As long as there is an internet connection (we can help as needed) RemoteRespects manages your memorial webcast from just about anywhere. Graveside, funeral home, however you've chosen to honour your loved one, our staff are mindful and supportive.</p>
                             <div className="learn-more" onClick={() => scrollTo('#examples')}>
-                                <CgArrowLongDownC />
-                                    <p>Learn more</p>
-                                <CgArrowLongDownC />
+                                {/* <CgArrowLongDownC /> */}
+                                    <button>Learn more</button>
+                                {/* <CgArrowLongDownC /> */}
                             </div>
                         </div>
                     </div>

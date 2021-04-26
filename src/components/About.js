@@ -1,5 +1,4 @@
 import React from 'react';
-import { StaticImage } from "gatsby-plugin-image";
 import '../../styles/index.scss';
 import candles from '../images/candles.jpg';
 
