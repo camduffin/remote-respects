@@ -13,11 +13,11 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <SEO title="Home" />
+        <SEO title="Home"/>
           <Landing />
           <About />
           <How />
-          <Contact />
+          <Contact/>
         </Layout>
   )
 }
