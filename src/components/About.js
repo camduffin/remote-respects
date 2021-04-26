@@ -20,6 +20,7 @@ const About = () => {
                 src={candles} alt="candles"
                 placeholder="blurred" 
                 
+                
                 loading="lazy"
                 width={700}
                 height={400}
