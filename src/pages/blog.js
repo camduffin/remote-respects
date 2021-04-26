@@ -3,13 +3,13 @@ import BlogNav from '../components/Blog/BlogNav';
 import BlogLanding from '../components/Blog/BlogLanding';
 import Footer from '../components/Footer';
 import PostOne from '../components/Blog/PostOne';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 const Blog = () => {
 
     return (
         <>
-            <SEO title="Blog" />
+            <Seo title="Blog" />
             <header>
                 <BlogNav />
                 <BlogLanding />
