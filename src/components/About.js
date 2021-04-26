@@ -19,6 +19,7 @@ const About = () => {
                 className="candle-image" 
                 src={candles} alt="candles"
                 placeholder="blurred" 
+                
                 loading="lazy"
                 width={700}
                 height={400}
