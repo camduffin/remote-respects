@@ -71,8 +71,8 @@ const BlogNav = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/#examples">
-                        Examples
+                    <Link to="/#pricing">
+                        Pricing
                     </Link>
                 </li>
                 <li>
