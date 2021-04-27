@@ -26,6 +26,7 @@
         color:  white;
         font-family: $questrial;
         font-size: 8rem;
+        text-shadow: 2px 2px 3px $black;
 
         @include smallPhoneMQ {
             font-size: 6rem;
@@ -268,6 +269,7 @@ h2 {
             @include navLink(2.5rem);
             display: block;
             transition: all .2s ease-in-out;
+            text-shadow: 1px 1px 3px $black;
 
             &:hover,
             &:focus {
@@ -452,6 +454,7 @@ h2 {
         color: $transwhite;
         border-bottom: 2px solid $transwhite;
         width: 97%;
+        text-shadow: 1px 1px 3px $black;
     }
 
     p {
@@ -467,7 +470,7 @@ h2 {
         color: $transwhite;
         border-bottom: 2px solid $transwhite;
         width: 97%;
-        
+        text-shadow: 1px 1px 3px $black;       
     }
 
     .how-text {
@@ -544,6 +547,7 @@ h2 {
         color: $transwhite;
         border-bottom: 2px solid $transwhite;
         width: 78%;
+        text-shadow: 1px 1px 3px $black;
     }
 
     .how-two-flex {
@@ -790,6 +794,7 @@ h2 {
         text-align: center;
         position: relative;
         right: 25px;
+        text-shadow: 2px 2px 3px $black;
 
         @include phoneMQ {
             right: 4px;
@@ -801,6 +806,7 @@ h2 {
         font-family: $abel;
         text-align: center;
         color: $offwhite;
+        text-shadow: 2px 2px 3px $black;
     }
 
     svg {
