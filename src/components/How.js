@@ -23,14 +23,14 @@ const How = () => {
                             <p>As long as there is an internet connection (we can help as needed) Remote Respects manages your memorial webcast from just about anywhere. Graveside, funeral home, however you've chosen to honour your loved one, our staff are mindful and supportive.</p>
                             <p>We create a page with your service embedded, and provide a link to share with friends and family. It will look something like <span>THIS REMOTERESPECTS.CA/JOHNSMITH</span>. This page can include items such as a guestbook, prayers, or song lyrics.</p>
                             <p>We manage site visits, microphone and camera setups, coordination with your funeral director and provide a high quality broadcast for your loved ones to visit at their comfort. Our professional staff are polite, well dressed, and adhere to all mask and distancing requirements.</p>
-                            <div className="learn-more" onClick={() => scrollTo('#examples')}>
+                            <div className="learn-more" onClick={() => scrollTo('#pricing')}>
                                 <button>Pricing</button>
                             </div>
                         </div>
                     </div>
                 </Parallax>
             </section>
-            <section className="how-section-two" id="examples">
+            <section className="how-section-two" id="pricing">
                 <div className="wrapper how-two-flex">
                     <div className="how-two-image">
                         <img src={mobileVideo} alt="A person scrolling through a mobile phone resting on a wooden table"/>

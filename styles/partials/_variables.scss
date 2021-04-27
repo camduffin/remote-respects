@@ -4,6 +4,7 @@
 // colours 
 
 $opaque: rgba(0, 0, 0, .4);
+$opaquenav: rgba(0, 0, 0, .8);
 $offwhite: #dbe0e3e3;
 $darkbrown: #655656;
 $dark: #212121;
@@ -42,9 +43,27 @@ $abel: 'Abel', sans-serif;
 
 // Media Queries
 
+@mixin bigTabletMQ {
+    @media (max-width: 1100px) {
+    @content;
+    }
+}
+
 
 @mixin tabletMQ {
-    @media (max-width: 768px) {
+    @media (max-width: 860px) {
+    @content;
+    }
+}
+
+@mixin phoneMQ{
+    @media (max-width: 657px) {
+    @content;
+    }
+}
+
+@mixin smallPhoneMQ{
+    @media (max-width: 400px) {
     @content;
     }
 }

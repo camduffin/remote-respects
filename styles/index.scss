@@ -16,12 +16,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include phoneMQ {
+            padding-left: 10%;
+        }
     }
 
     h1 {
         color:  white;
         font-family: $questrial;
         font-size: 8rem;
+
+        @include smallPhoneMQ {
+            font-size: 6rem;
+        }
     }
 
     svg {
@@ -30,9 +38,13 @@
         font-size: 5rem;
         position: absolute;
         top: 40%;
-        left: 50%;
+        left: 47.5%;
         height: 110vh;
         cursor: pointer;
+
+        @include bigTabletMQ {
+            display: none;
+        }
     }
 
 }
@@ -54,51 +66,93 @@ footer {
     background-color: $dark;
     margin: 0;
 
-
     .footer-container {
         display: flex;
         width: 100%;
-        justify-content: space-around;
         align-items: center;
-        width: 70%;
         height: 40vh;
         margin: 0 auto;
-        min-width: 700px;
+        justify-content: center;
+
+        @include bigTabletMQ {
+            padding: 50px 0;
+            height: auto;
+            padding-left: 10%;
+        }
+    }
+
+    .footer-flex-one, .footer-flex-two {
+        display: flex;
+
+        @include bigTabletMQ {
+            flex-direction: column;
+        }
+    }
+
+    .footer-flex-two {
+        
+        @include bigTabletMQ {
+            flex-direction: column-reverse;
+        }
     }
 
     .copyright-bottom {
         width: 100%;
         text-align: center;
+        padding-top: 30px;
+        margin: 0;
+        padding-bottom: 0;
+
+        p {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 30px;
+        }
     }
 
+    
+    .address {
+        padding: 30px;
+    }
+    
     .phone {
         display: flex;
         flex-direction: column;
-        height: 100px;
-        justify-content: space-around;
-
+        padding: 30px;
+        
+        @include bigTabletMQ {
+            padding-left: 20%;
+        }
+        
         a {
             transition: all .2s ease-in-out;
             @include paragraph(2rem);
         }
-
+        
         a:hover, a:focus {
             transform: scale(1.2);
         }
-
+        
     }
+    
+    .copyright {
+        padding: 30px 0;
+        padding-left: 15%;
 
-    .isi-logo {
-        opacity: .8;
-        border-radius: 5px;
-        width: 50%;
-        box-shadow: 5px 5px 8px $offwhite;
-        transition: all .2s ease-in-out;
-
-        &:hover, 
-        &:focus {
-            opacity: .5;
-            transform: scale(1.1);
+        .isi-logo {
+            opacity: .8;
+            border-radius: 5px;
+            width: 50%;
+            box-shadow: 5px 5px 8px $offwhite;
+            transition: all .2s ease-in-out;
+            position: relative;
+            min-width: 100px;
+            
+            &:hover, 
+            &:focus {
+                opacity: .5;
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -106,15 +160,17 @@ footer {
         color: $offwhite
     }
 
-    p {
-        margin: 0;
-        padding: 0;
-        height: 5vh;
-    }
 
     .social-links {
         margin: 0;
         display: flex;
+        min-width: 200px;
+
+        @include bigTabletMQ {
+            flex-wrap: wrap;
+            width: 70%;
+            padding-bottom: 15%;
+        }
         
         li {
             padding: 20px;
@@ -128,11 +184,19 @@ footer {
                 &:focus {
                     color: $darkbrown;
                 }
+
             }
     
             &:hover,
             &:focus {
                 transform: scale(1.4);
+            }
+        }
+
+        .linkedin {
+                    
+            svg {
+                font-size: 3.6rem;
             }
         }
     
@@ -166,7 +230,6 @@ h2 {
     margin: 0;
 
     .logo {
-
         cursor: pointer;
         background: transparent;
         border: none;
@@ -176,20 +239,25 @@ h2 {
             opacity: .6;
             width: 50%;
         }
+
+        @include tabletMQ {
+            display: none;
+        }
     }
 
     ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1.3fr 1fr 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-around;
         width: 80%;
         position: relative;
-        left: 210px;
+        padding-left: 5%;
     }
 
     li {
 
         a {
             @include navLink(2.5rem);
+            display: block;
         }
     }
 
@@ -203,6 +271,14 @@ h2 {
         transition: all .3s ease-in-out;
         padding: 100px;
         display: none;
+
+        @include phoneMQ {
+            left: 60%;
+        }
+
+        @include smallPhoneMQ {
+            left: 50%;
+        }
 
         &:hover {
             opacity: .7;
@@ -262,7 +338,7 @@ h2 {
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 860px) {
 
     .nav-bar {
 
@@ -279,14 +355,23 @@ h2 {
         left: 0;
         height: 100vh;
         margin: 0;
-        background-color: $opaque;
-        width: 50%;
-        transform: translateX(-500px);
+        background-color: $opaquenav;
+        width: 100%;
+        transform: translateX(-1000px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     nav .nav-links li {
-        padding: 50px 25px 25px 15px;
-        width: 50%;
+        padding: 50px 25px 25px 80px;
+        width: 100%;
+        height: 90px;
+
+        a {
+            font-size: 4rem;
+        }
     }
 
 }
@@ -304,7 +389,10 @@ h2 {
         background: $opaque;
         border-radius: 5px;
         padding: 100px 40px;
-        // box-shadow: 5px 5px 50px $transwhite;
+
+        @include tabletMQ {
+            flex-direction: column;
+        }
     }
 
     .about-text {
@@ -317,11 +405,16 @@ h2 {
         padding-left: 90px;
         padding-top: 50px;
 
+        @include tabletMQ {
+            padding: 0;
+            padding-top: 40px;
+        }
+
         img {
             border-radius: 5px;
             width: 100%;
 
-            min-width: 300px;
+            min-width: 200px;
         }
     }
 
@@ -340,10 +433,6 @@ h2 {
 
 .how-section {
 
-    .how-background {
-        height: 100vh;
-    }
-
     h2 {
         color: $transwhite;
         border-bottom: 2px solid $transwhite;
@@ -360,14 +449,26 @@ h2 {
         border-radius: 3px;
         padding-right: 100px;
         padding-bottom: 100px;
+        margin-bottom: 100px;
+
+        @include tabletMQ {
+            margin-bottom: 50px;
+            width: 100%;
+        }
+
     }
 
     p {
         color: white;
         border-right: 2px solid $transwhite;
 
+        @include bigTabletMQ {
+            border-right: none;
+        }
+
         span {
             color: $black;
+            word-wrap: break-word;
         }
     }
 
@@ -402,8 +503,12 @@ h2 {
 
 .how-section-two {
     padding: 100px 0;
-    
+    margin: 0;
     background-color: $black;
+
+    @include bigTabletMQ {
+        background: $darkbrown;
+    }
 
     h2 {
         color: $transwhite;
@@ -412,27 +517,48 @@ h2 {
     }
 
     .how-two-flex {
-        padding: 100px 40px;
+        padding: 100px 5%;
         display: flex;
         width: 100%;
         justify-content: space-between;
         align-items: center;
         background: $darkbrown;
         border-radius: 5px;
-        // box-shadow: 5px 5px 50px $transwhite;
+
+        @include phoneMQ {
+            flex-direction: column-reverse;
+            width: 85%;
+        }
     }
 
     .how-to-text {
         margin-right: 100px;
+
+        @include phoneMQ {
+            margin-right: 0;
+            display: flex;
+            justify-content: center;
+            width: 80%;
+        }
     }
 
     .how-two-image {
         width: 100%;
         padding-right: 30px;
 
+        @include phoneMQ {
+            display: flex;
+            justify-content: center;
+        }
+
         img {
             width: 100%;
             min-width: 300px;
+
+            @include phoneMQ {
+                width: 60%;
+                margin-top: 100px;
+            }
         }
     }
 
@@ -484,6 +610,10 @@ h2 {
         align-items: center;
         justify-content: center;
         width: 100%;
+
+        @include tabletMQ {
+            flex-direction: column-reverse;
+        }
     }
 
     .form-container {
@@ -515,6 +645,10 @@ h2 {
         align-items: flex-start;
         width: 80%;
         height: 100vh;
+
+        @include tabletMQ {
+            width: 100%;
+        }
 
         input[type="text"], input[type="email"], textarea {
             background: $opaque;
@@ -560,10 +694,16 @@ h2 {
     }
 
     nav {
-        width: 40%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include tabletMQ {
+            width: 100%;
+            padding-bottom: 50px;
+            padding-left: 4%;
+        }
 
         li {
             padding: 20px 0;
@@ -572,6 +712,7 @@ h2 {
         a {
             color: $offwhite;
             @include paragraph(3rem);
+            display: inline-block;
         }
     }
 
@@ -597,6 +738,12 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include phoneMQ {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 15%;
+        }
     }
 
     h1 {
@@ -606,6 +753,11 @@ h2 {
         text-align: center;
         position: relative;
         right: 25px;
+
+        @include phoneMQ {
+            right: 4px;
+            text-align: left;
+        }
     }
 
     h2 {
@@ -623,6 +775,10 @@ h2 {
         left: 50%;
         height: 110vh;
         cursor: pointer;
+
+        @include tabletMQ {
+            display: none;
+        }
     }
 
 }
