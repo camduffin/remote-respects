@@ -41,6 +41,14 @@
         left: 47.5%;
         height: 110vh;
         cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $aqua;
+            transform: scale(1.2);
+            opacity: 1;
+        }
 
         @include bigTabletMQ {
             display: none;
@@ -127,6 +135,7 @@ footer {
         a {
             transition: all .2s ease-in-out;
             @include paragraph(2rem);
+            padding: 7px 0;
         }
         
         a:hover, a:focus {
@@ -182,7 +191,7 @@ footer {
     
                 &:hover,
                 &:focus {
-                    color: $darkbrown;
+                    color: $aqua;
                 }
 
             }
@@ -258,6 +267,12 @@ h2 {
         a {
             @include navLink(2.5rem);
             display: block;
+            transition: all .2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: $aqua;
+            }
         }
     }
 
@@ -319,18 +334,32 @@ h2 {
         padding-left: 20px;
         z-index: 20000;
 
+        @include tabletMQ {
+
+            padding-bottom: 100px;
+        }
+
         .exit {
             color: $offwhite;
-            font-size: 4rem;
             display: none;
+            cursor: pointer;
 
             @include tabletMQ {
                 display: block;
             }
 
+            svg {
+                transition: all .1s ease-in-out;
+                font-size: 4.5rem;
+            }
+
             svg:hover,
             svg:focus {
-                transform: scale(1.15);
+                transform: scale(1.2);
+                color: $aqua;
+            }
+
+            svg:active {
                 transform: rotate(90deg);
             }
         }
@@ -372,6 +401,7 @@ h2 {
         a {
             font-size: 4rem;
         }
+
     }
 
 }
@@ -488,9 +518,9 @@ h2 {
 
             &:hover,
             &:focus {
-                color: $black;
-                border-bottom: 2px solid $black;
-                border-right: 2px solid $black;
+                color: $aqua;
+                border-bottom: 2px solid $aqua;
+                border-right: 2px solid $aqua;
             }
         }
     }
@@ -587,9 +617,9 @@ h2 {
 
             &:hover,
             &:focus {
-                color: $black;
-                border-bottom: 2px solid $black;
-                border-right: 2px solid $black;
+                color: $aqua;
+                border-bottom: 2px solid $aqua;
+                border-right: 2px solid $aqua;
             }
         }
     }
@@ -682,6 +712,7 @@ h2 {
             &:focus {
                 transform: scale(0.9);
                 opacity: 0.5;
+                color: $aqua;
             }
 
             &:active {
@@ -713,6 +744,12 @@ h2 {
             color: $offwhite;
             @include paragraph(3rem);
             display: inline-block;
+            transition: all .2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: $aqua;
+            }
         }
     }
 
@@ -772,9 +809,17 @@ h2 {
         font-size: 5rem;
         position: absolute;
         top: 40%;
-        left: 50%;
+        left: 49%;
         height: 110vh;
         cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $aqua;
+            transform: scale(1.2);
+            opacity: 1;
+        }
 
         @include tabletMQ {
             display: none;
