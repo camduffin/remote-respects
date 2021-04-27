@@ -52,9 +52,9 @@ const NavBar = () => {
 
     return (
         <nav className="nav-bar" id="navbar" style={{top: visible ? '0' : '-15vh'}}>
-            <a onClick={() => scrollTo('#main')} className="logo">
+            <button onClick={() => scrollTo('#main')} className="logo">
                 <img src={logo} alt="iSiLIVE logo"/>
-            </a>
+            </button>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                 <li className="exit"><RiCloseFill onClick={() => handleClick()} /></li>
                 <li>

@@ -168,6 +168,8 @@ h2 {
     .logo {
 
         cursor: pointer;
+        background: transparent;
+        border: none;
         
         img {
             border-radius: 5px;
@@ -363,6 +365,10 @@ h2 {
     p {
         color: white;
         border-right: 2px solid $transwhite;
+
+        span {
+            color: $black;
+        }
     }
 
     .learn-more {
@@ -381,9 +387,9 @@ h2 {
 
             &:hover,
             &:focus {
-                color: $violet;
-                border-bottom: 2px solid $violet;
-            border-right: 2px solid $violet;
+                color: $black;
+                border-bottom: 2px solid $black;
+                border-right: 2px solid $black;
             }
         }
     }
@@ -436,6 +442,29 @@ h2 {
         img {
             width: 100%;
             min-width: 200px;
+        }
+    }
+
+    .contact-button {
+        display: flex;
+        cursor: pointer;
+
+        button {
+            background: none;
+            border: none;
+            font-size: 2.5rem;
+            color: $offwhite;
+            cursor: pointer;
+            border-bottom: 2px solid $transwhite;
+            border-right: 2px solid $transwhite;
+            transition: all 0.2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: $black;
+                border-bottom: 2px solid $black;
+                border-right: 2px solid $black;
+            }
         }
     }
 
