@@ -13,7 +13,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <Search />
+        <Search/ >
           <Landing />
           <About />
           <How />
