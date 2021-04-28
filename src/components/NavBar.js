@@ -3,6 +3,8 @@ import '../../styles/index.scss';
 import { Link } from 'gatsby';
 import { RiCloseFill } from 'react-icons/ri';
 import logo from '../images/isi-logo.png';
+import logoWeb from '../images/isi-logo-2.webp';
+import smallLogo from '../images/isi-small-logo.png';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
@@ -53,7 +55,7 @@ const NavBar = () => {
     return (
         <nav className="nav-bar" id="navbar" style={{top: visible ? '0' : '-15vh'}}>
             <button onClick={() => scrollTo('#main')} className="logo">
-                <img src={logo} alt="iSiLIVE logo"/>
+                <img src={smallLogo} alt="iSiLIVE logo"/>
             </button>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                 <li className="exit"><RiCloseFill onClick={() => handleClick()} /></li>

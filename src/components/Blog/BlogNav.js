@@ -3,6 +3,8 @@ import '../../../styles/index.scss';
 import { Link } from 'gatsby';
 import { RiCloseFill } from 'react-icons/ri';
 import logo from '../../images/isi-logo.png';
+import logoWeb from '../../images/isi-logo-2.webp';
+import smallLogo from '../../images/isi-small-logo.png';
 
 
 const BlogNav = () => {
@@ -50,9 +52,11 @@ const BlogNav = () => {
 
     return (
         <nav className="nav-bar" id="navbar" style={{top: visible ? '0' : '-15vh'}}>
-            <Link className="logo" to="/">
-                <img src={logo} alt="iSiLIVE logo"/>
-            </Link>
+            <div className="logo-blog-container">
+                <Link className="logo" to="/">
+                    <img src={smallLogo} alt="iSiLIVE logo"/>
+                </Link>
+            </div>
             <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                 <li className="exit"><RiCloseFill onClick={() => handleClick()} /></li>
                 <li>

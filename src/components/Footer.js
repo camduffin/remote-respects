@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../images/isi-logo.png';
 import SocialLinks from '../components/SocialLinks';
+import logoWeb from '../images/isi-logo-2.webp';
 
 const Footer = () => {
     return (
@@ -15,7 +16,7 @@ const Footer = () => {
                     <div className="copyright">
                         <p>Presented By</p>
                         <a href="https://isilive.ca/" target="_blank" rel="noreferrer noopener">
-                            <img className="isi-logo" src={logo} alt="iSiLIVE logo"/>
+                            <img className="isi-logo" src={logoWeb} alt="iSiLIVE logo"/>
                         </a>
                     </div>
                 </div>
