@@ -238,8 +238,6 @@ h2 {
     align-items: center;
     transition: top 0.6s;
     margin: 0;
-
-    
     
     .logo {
         cursor: pointer;
@@ -248,6 +246,7 @@ h2 {
         width: 12%;
         margin-right: 300px;
         margin-left: 100px;
+        max-width: 150px;
         
         img {
             border-radius: 5px;
