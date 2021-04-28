@@ -1,6 +1,5 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import darkLandscape from '../images/dark-landscape.jpg';
 import landing from '../images/landing.jpg';
 import '../../styles/index.scss';
 import { CgArrowLongDownC } from 'react-icons/cg';

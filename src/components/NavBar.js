@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/index.scss';
 import { Link } from 'gatsby';
 import { RiCloseFill } from 'react-icons/ri';
-import logo from '../images/isi-logo.png';
-import logoWeb from '../images/isi-logo-2.webp';
 import smallLogo from '../images/isi-small-logo.png';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 

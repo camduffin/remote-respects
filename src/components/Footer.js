@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from '../images/isi-logo.png';
 import SocialLinks from '../components/SocialLinks';
-import logoWeb from '../images/isi-logo-2.webp';
+import logoWeb from '../images/isi-logo-2.png';
 
 const Footer = () => {
     return (
