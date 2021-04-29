@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Remote Respects`,
     description: `Funeral webcast to share your memories and memorial with the people that matter.`,
-    siteUrl: `https://production.d19hoapejxw6z2.amplifyapp.com/`,
+    siteUrl: `https://www.remoterespects.ca/`,
     keywords: `funeral, graveside, service, memorial, funeral webcast, funeral livestream, memorial webcast, memorial livestream, graveside service, distance funeral,  funeral broadcast, memorial broadcast, graveside broadcast, ashes, commemoration`,
-    image: `/isi-logo.png`,
+    image: `/landing.jpg`,
     twitterUsername: `@iSiLIVE_Canada`,
   },
   plugins: [
@@ -29,7 +29,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/isi-small-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/button.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../../../styles/index.scss';
 import { Link } from 'gatsby';
 import { RiCloseFill } from 'react-icons/ri';
-import smallLogo from '../../images/isi-small-logo.png';
+import smallLogo from '../../images/button.png';
 
 
 const BlogNav = () => {
