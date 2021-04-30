@@ -22,21 +22,15 @@ function Search({ title, description, image, lang }) {
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname}`,
+        canonical: `${siteUrl}${pathname}`
     }
 
-
-
-    // const metaDescription = description || site.siteMetadata.description
-
     return (
-        <Helmet
-        title={seo.title}
-            htmlAttributes={{
-                lang,
-            }}
-            >
+        <Helmet title={seo.title} htmlAttributes={{ lang }}>
 
             <meta name="description" content={seo.description} />
+
+            <link rel="canonical" href={seo.canonical}/>
 
             <meta name="keywords" content="funeral, graveside, service, memorial, funeral webcast, funeral livestream, memorial webcast, memorial livestream, graveside service, distance funeral,  funeral broadcast, memorial broadcast, graveside broadcast, ashes, commemoration"/>
 

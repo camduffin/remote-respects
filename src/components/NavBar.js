@@ -50,6 +50,9 @@ const NavBar = () => {
     }, [prevScrollPos, visible, handleScroll]);
 
 
+
+
+
     return (
         <nav className="nav-bar" id="navbar" style={{top: visible ? '0' : '-15vh'}}>
             <button onClick={() => scrollTo('#main')} className="logo">
