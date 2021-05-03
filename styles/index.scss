@@ -652,20 +652,27 @@ h2 {
         cursor: pointer;
 
         button {
-            background: none;
+            background: $black;
             border: none;
-            font-size: 2.5rem;
-            color: $offwhite;
+            font-size: 2rem;
+            color: white;
             cursor: pointer;
-            border-bottom: 2px solid $transwhite;
-            border-right: 2px solid $transwhite;
+            border: 2px solid $transwhite;
             transition: all 0.2s ease-in-out;
+            padding: 10px;
 
             &:hover,
             &:focus {
                 color: $aqua;
-                border-bottom: 2px solid $aqua;
-                border-right: 2px solid $aqua;
+                background-color: transparent;
+                transform: scale(0.9);
+                opacity: 0.9;
+            }
+
+            &:active {
+                position: relative;
+                top: 2px;
+                opacity: .6;
             }
         }
     }
