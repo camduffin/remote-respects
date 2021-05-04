@@ -3,7 +3,7 @@ module.exports = {
     title: `Remote Respects`,
     description: `Funeral webcast to share your memories and memorial with the people that matter.`,
     siteUrl: `https://www.remoterespects.ca`,
-    keywords: `funeral, graveside, service, memorial, funeral webcast, funeral livestream, memorial webcast, memorial livestream, graveside service, distance funeral,  funeral broadcast, memorial broadcast, graveside broadcast, ashes, commemoration`,
+    keywords: `funeral, graveside, service, memorial, funeral webcast, funeral livestream, memorial webcast, memorial livestream, livestream, graveside service, distance funeral,  funeral broadcast, memorial broadcast, graveside broadcast, ashes, commemoration`,
     image: `/landing.jpg`,
     twitterUsername: `@iSiLIVE_Canada`,
   },
