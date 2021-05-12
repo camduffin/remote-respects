@@ -9,8 +9,8 @@ const BlogLanding = () => {
     return (
         <Parallax 
         className="blog-landing-background"
-        strength={500}
-        blur={{ min: -15, max: 15 }} 
+        strength={400}
+        blur={{ min: -5, max: 5 }} 
         bgImage={ferns}>
             <div className="blog-landing-container">
                 <h1 data-sal="slide-right" data-sal-duration="2000">Blog</h1>

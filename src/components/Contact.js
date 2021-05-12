@@ -10,8 +10,8 @@ const Contact = () => {
         <section className="contact-section" id="contact">
             <Parallax 
                 className="contact-background"
-                strength={500}
-                blur={{ min: -15, max: 15 }} 
+                strength={200}
+                blur={{ min: -4, max: 4 }} 
                 bgImage={trees}
                 >
                     <div className="wrapper">

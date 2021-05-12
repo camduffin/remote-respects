@@ -9,11 +9,11 @@ const Landing = () => {
     return (
         <Parallax 
         className="landing-background"
-        strength={500}
-        blur={{ min: -15, max: 15 }} 
+        strength={400}
+        blur={{ min: -4, max: 4 }} 
         bgImage={landing}>
             <div className="landing-container" id="main">
-                <h1 data-sal="slide-right" data-sal-duration="2000">Remote Respects</h1>
+                <h1 data-sal="slide-right" data-sal-duration="1000">Remote Respects</h1>
                 <CgArrowLongDownC onClick={() => scrollTo('#about')} />
             </div>
         </Parallax>

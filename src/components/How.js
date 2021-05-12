@@ -1,9 +1,9 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import fields from '../images/fields.jpg';
+import fields from '../images/fields-min.jpg';
 import '../../styles/index.scss';
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import mobileVideo from '../images/mobile-video.jpg';
+import mobileVideo from '../images/mobile-video-min.jpg';
 
 const How = () => {
 
@@ -13,8 +13,8 @@ const How = () => {
             <section className="how-section" id="how">
                 <Parallax 
                 className="how-background"
-                strength={500}
-                blur={{ min: -15, max: 15 }} 
+                strength={300}
+                blur={{ min: -5, max: 5 }} 
                 bgImage={fields}
                 >
                     <div className="wrapper">
